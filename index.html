@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    
+    <title>Cantores Dei</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <header>
+      <div id="CD">CD</div>
+      <nav id="Nav_menu">
+        <div class="menu_items">
+          <a href="#ABOUT">Про нас</a>
+          <a href="#Dosvilla">Дозвілля</a>
+          <a href="#CONTACTS">Контакти</a>
+          <a href="#JOIN">Приєднатись</a>
+        </div>
+       
+      </nav>
+      <div id="menu">
+        <img src="https://img.icons8.com/ios/50/000000/menu--v1.png"/>
+      </div>
+    </header>
+   
+    <div class="container" id="myForm">
+      <form action="action_page.php">
+        <div><label for="fname">First Name</label>
+          <input type="text" id="fname" name="Ім'я" placeholder="Ваше ім'я">
+        </div>
+        <div><label for="lname">Last Name</label>
+          <input type="text" id="lname" name="Прізвище" placeholder="Ваше прізвище..">
+        </div>
+        <div><label for="Голос">Голос</label>
+          <select id="country" name="country">
+            <option value="Сопрано">Сопрано</option>
+            <option value="Альт">Альт</option>
+            <option value="Бас">Бас</option>
+            <option value="Тенор">Тенор</option>
+          </select></div>
+        
+        <div><label for="Пошта">Email</label>
+          <input type="email" id="Пошта" name="Пошта" placeholder="Пошта">
+        </div>
+
+        <div><label for="Інше">Розкажіть про себе</label>
+          <textarea id="subject" name="Інше" placeholder="Як давно співаєш?Чому ми?.." style="height:200px"></textarea>
+        </div>
+        
+        <div><input type="submit" value="Подати заявку">
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </div>
+      </form>
+    </div>
+
+    <main>
+
+      <div class="flex_wrapper1" id="JOIN" >
+  
+        <button id="Join" onclick="openForm()">Приєднатись</button>
+        <div id="Text">Cantores Dei</div>
+      </div>
+
+
+
+
+      <div class="flex_About"id="ABOUT">
+        <div id="text_ab">
+          Ми - український молодіжний католицький хор, зосереджений у м. Львів, Левандівка
+        </div>
+        <div id="About">Про нас</div>
+      </div>
+
+
+
+      <h1 id="Why_w">Чому ми?</h1>
+
+
+
+      <div class="flex_Church_Info">
+        <div id="church">
+          <img id="Church_im" src="IMG_2054 (2).jpg">
+          <div>Надзвичайна парафія</div>
+        </div>
+
+        <div id="friends">
+          <img id="Friends_im" src="IMG_1778.jpg">
+          <div>Дружний колектив</div>
+        </div>
+
+        <div id="food">
+          <img id="food_im" src="IMG_0599.jpg">
+          <div>Смачні нагороди</div>
+        </div>
+
+        <div id="concert">
+          <img id="concert_im" src="0C8A0247 (2).jpg">
+          <div>Чарівні концерти</div>
+        </div>
+      </div>
+
+
+
+
+      <div class="flex_Church_det">
+        <div id="header_ch">
+          <div>Парафія</div>
+        </div>
+
+        <div id="info_church">
+
+          <div id="text_ch">
+            <p>Вознесіння Господнього</p>
+            <p2>11.00</p2>
+          </div>
+
+          <div class="images_ch">
+            <li id="ph_1">
+              <img src="chuch1.jpg" >
+            </li>
+            <li id="vid_1">
+              
+              <video id="video" controls="controls"/>
+         
+                <source src="IMG_0628.mp4" type="video/mp4">
+              </video>
+              
+            </li>
+            
+            <li id="ph_2">
+              <img src="IMG_2057.jpg" >
+            </li>
+            
+          </div>
+          
+          
+          
+          
+        </div>
+      </div>
+
+
+
+      <h1 id="header_dosv">Дозвілля</h1>
+
+
+
+      
+      <div class="flex_Dosvilla" id="Dosvilla">
+        <div id="travel">
+          <img src="IMG_3605.jpg" >
+          <div>Поїздки</div>
+        </div>
+
+        <div id="shlub">
+          <img src="shlub.jpg" >
+          <div>Шлюби</div>
+        </div>
+    
+
+        <div id="celebr">
+          <img src="foood.jpg" >
+          <div>Святкування</div>
+        </div>
+      </div>
+      <div class="flex_Contacts" id="CONTACTS">
+        <div id="info_cont">
+          <h2>До зустрічі на репетиції</h2>
+          <div class="info_cont_details">
+            <p>За деталями звертайтесь за номером :</p>
+            <p class="phone_number">0980900076</p>
+            <img src="./telegram.svg" />
+          </div>
+          <p2>А також залишайте онлайн-заявки за посиланням</p2>
+        </div>
+        
+        
+
+        <div id="header_con">
+          <div>Контакти</div>
+          
+          <div id="Video">
+            <video id="video" controls="controls">
+              <source src="IMG_0628.mp4" type="video/mp4">
+            </video>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+
+
+
+
+    <footer>
+      <div id="menu_line">
+        <div id="CD2">CD</div>
+        <div id="Nav2_menu">
+          <a href="#">Про нас</a>
+          <a href="#">Дозвілля</a>
+          <a href="#">Контакти</a>
+          <a href="#">Приєднатись</a>
+        </div>
+      </div>
+
+      <div id="logos">
+        <div id="inst_im">
+          <img src="https://img.icons8.com/color/48/null/instagram-new--v1.png"/>
+        </div>
+        <div id="faceb_im">
+          <img src="https://img.icons8.com/color/48/null/facebook-new.png"/>
+        </div>
+
+      </div>
+
+    </footer>
+  </body>
+
+  
+
+  
+  
+  
+  
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+
+</html>
